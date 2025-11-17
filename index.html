@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柳绿学姐小课堂</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .colorful-text {
+            font-size: 3rem; /* 三号字体大小 */
+            font-weight: bold; /* 粗体 */
+            background: linear-gradient(
+                90deg, 
+                #ff0000, #ff7f00, #ffff00, #00ff00, 
+                #00ffff, #0000ff, #8b00ff, #ff00ff
+            );
+            background-size: 600% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow 8s ease infinite;
+            text-align: center;
+        }
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="colorful-text">
+        柳绿学姐小课堂开课啦 😊
+    </div>
+</body>
+</html>
